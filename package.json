@@ -6,7 +6,9 @@
     "serve": "env NODE_ENV=production vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "storybook": "start-storybook --ci -p 52500"
+    "storybook": "start-storybook --ci -p 52500",
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "build-storybook && gh-pages -d storybook-static" 
   },
   "dependencies": {
     "@mdi/font": "^5.0.45",
@@ -45,6 +47,7 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^6.1.2",
+    "gh-pages": "^2.2.0",
     "prettier": "^1.19.1",
     "sass": "^1.19.0",
     "sass-loader": "^8.0.0",
