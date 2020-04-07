@@ -1,4 +1,4 @@
-import cases from '../index';
+import { cases } from '../index';
 import store from '@root/store';
 import DailyReport from '@components/DailyReport';
 
