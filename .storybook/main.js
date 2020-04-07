@@ -1,7 +1,4 @@
 const path = require('path');
-function resolve (dir) {
-    return path.join(__dirname, dir)
-}
 
 module.exports = {
   webpackFinal: async (config, { configType }) => {
@@ -10,7 +7,8 @@ module.exports = {
     // 'PRODUCTION' is used when building the static version of storybook.
 
     // Make whatever fine-grained changes you need
-    config.resolve.alias['@components'] = path.join(__dirname, '../src/components')
+    config.resolve.alias['@root'] = path.join(__dirname, '../src');
+    config.resolve.alias['@components'] = path.join(__dirname, '../src/components');
     console.log(JSON.stringify(config.resolve.alias, null, 2));
 
     // Return the altered config
