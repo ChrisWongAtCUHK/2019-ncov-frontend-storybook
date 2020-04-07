@@ -52,7 +52,6 @@ export default {
       series: []
     };
   },
-
   computed: {
     ...mapState(['isDarkTheme'])
   },
@@ -60,6 +59,7 @@ export default {
   watch: {
     data(val) {
       const datesCombined = val.map(i => i.dates).flat(1);
+      debugger;
       const uniqueDates = [...new Set(datesCombined.map(i => i.date))];
       const categories = uniqueDates.slice(Math.max(uniqueDates.length - 10, 1));
       this.$refs.chart.updateOptions({

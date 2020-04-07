@@ -17,5 +17,9 @@ export const dailyReportComponent = () => ({
     }
   },
   template: '<DailyReport :data="cases.data" />',
+  mounted() {
+    // trigger the watcher
+    this.cases = JSON.parse(JSON.stringify(cases));
+  },
   store: store
 });
