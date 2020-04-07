@@ -1,6 +1,4 @@
-<a href="https://www.buymeacoffee.com/7eDr4fv" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-orange.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;" ></a>
-
-# 2019-ncov-frontend
+# [2019-ncov-frontend](https://github.com/sorxrob/2019-ncov-frontend)
 
 > Coronavirus (COVID-19) Frontend
 
