@@ -9,7 +9,7 @@ module.exports = {
     // Make whatever fine-grained changes you need
     config.resolve.alias['@root'] = path.join(__dirname, '../src');
     config.resolve.alias['@components'] = path.join(__dirname, '../src/components');
-    console.log(JSON.stringify(config.resolve.alias, null, 2));
+    config.resolve.alias['@mock'] = path.join(__dirname, '../mock');
 
     // Return the altered config
     return config;
