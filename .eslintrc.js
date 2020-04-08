@@ -10,6 +10,12 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'prettier/prettier': ['error']
   },
+  overrides: [
+    {
+      files: ['src/*.js', 'src/**/*.js'],
+      excludedFiles: '*.mock.js',
+    }
+  ],
   parserOptions: {
     parser: 'babel-eslint'
   }
