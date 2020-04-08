@@ -2,8 +2,8 @@ import Vue from 'vue';
 import Vuetify from 'vuetify';
 import { shallowMount } from '@vue/test-utils';
 import DailyReport from '@/components/DailyReport.vue';
-import store from '../../src/store';
-import cases from '../../mock/cases.mock';
+import store from '@/store';
+import cases from '@mock/cases.mock';
 
 Vue.use(Vuetify);
 
