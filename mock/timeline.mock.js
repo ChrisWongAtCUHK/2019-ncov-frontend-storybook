@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+
 const timeline = [
   {
     "date": "29 February",

@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+
 const tweets = [
   {
     "created_at": "Tue Apr 07 22:41:21 +0000 2020",
