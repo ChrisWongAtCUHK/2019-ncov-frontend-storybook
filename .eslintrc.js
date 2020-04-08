@@ -13,7 +13,13 @@ module.exports = {
   overrides: [
     {
       files: ['src/*.js', 'src/**/*.js'],
-      excludedFiles: '*.mock.js',
+      excludedFiles: '*.mock.js'
+    },
+    {
+      files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
+      env: {
+        jest: true
+      }
     }
   ],
   parserOptions: {
