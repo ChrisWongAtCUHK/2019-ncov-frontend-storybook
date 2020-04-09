@@ -11,6 +11,15 @@ module.exports = {
     config.resolve.alias['@components'] = path.join(__dirname, '../src/components');
     config.resolve.alias['@mock'] = path.join(__dirname, '../mock');
 
+    config.module.rules.push({
+      test: /\.s(c|a)ss$/,
+      use: [
+        'vue-style-loader',
+        'css-loader', 
+        'sass-loader'
+      ]
+    });
+
     // Return the altered config
     return config;
   },
